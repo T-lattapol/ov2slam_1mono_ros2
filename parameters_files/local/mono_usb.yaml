@@ -1,0 +1,91 @@
+%YAML:1.0
+
+# ========================
+# Camera Parameters
+# ========================
+Camera.topic_left: /image_raw
+Camera.model_left: pinhole
+Camera.left_nwidth: 800
+Camera.left_nheight: 450
+
+# Camera calibration and distortion parameters (OpenCV) 
+Camera.fxl: 400.0     #
+Camera.fyl: 400.0     # 
+Camera.cxl: 400.0      #
+Camera.cyl: 225.0      #
+
+# Distortion coefficients (keep from calibration, or update if re-calibrated)
+Camera.k1l: 0.0
+Camera.k2l: 0.0
+Camera.p1l: 0.0
+Camera.p2l: 0.0
+
+# ========================
+# SLAM Mode
+# ========================
+mono: 1
+stereo: 0
+slam_mode: 0           # 1 = Mapping, 0 = Pure Localization
+force_realtime: 1
+buse_loop_closer: 0
+bdo_stereo_rect: 0
+bdo_undist: 0
+
+# ========================
+# Feature Extraction
+# ========================
+use_shi_tomasi: 0
+use_fast: 0
+use_brief: 1
+use_singlescale_detector: 1
+nmaxdist: 35
+nfast_th: 10
+dmaxquality: 0.001
+
+# ========================
+# Pre-processing
+# ========================
+use_clahe: 1
+fclahe_val: 2.0
+
+# ========================
+# KLT Tracker
+# ========================
+do_klt: 1
+klt_use_prior: 1
+nklt_win_size: 9
+nklt_pyr_lvl: 3
+nmax_iter: 30
+fmax_px_precision: 0.01
+fmax_fbklt_dist: 0.5
+nklt_err: 30.0
+
+# ========================
+# Matching & RANSAC
+# ========================
+bdo_track_localmap: 1
+fmax_desc_dist: 0.2
+fmax_proj_pxdist: 2.0
+doepipolar: 1
+bdo_random: 1
+nransac_iter: 100
+fransac_err: 3.0
+fmax_reproj_err: 3.0
+buse_inv_depth: 1
+
+# ========================
+# Optimizer
+# ========================
+robust_mono_th: 5.9915
+use_sparse_schur: 1
+apply_l2_after_robust: 1
+nmin_covscore: 25
+fkf_filtering_ratio: 0.95
+do_full_ba: 0
+
+# ========================
+# Trajectory Export
+# ========================
+save_traj: 1
+traj_path: "/home/lattapol/ros2_ws/src/ov2slam_traj.tum"
+
