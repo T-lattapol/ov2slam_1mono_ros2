@@ -1,7 +1,0 @@
-/home/lattapol/ros2_ws/src/ov2slam-ros2/Thirdparty/Sophus/build/CMakeFiles/other.dir
-/home/lattapol/ros2_ws/src/ov2slam-ros2/Thirdparty/Sophus/build/CMakeFiles/edit_cache.dir
-/home/lattapol/ros2_ws/src/ov2slam-ros2/Thirdparty/Sophus/build/CMakeFiles/rebuild_cache.dir
-/home/lattapol/ros2_ws/src/ov2slam-ros2/Thirdparty/Sophus/build/CMakeFiles/list_install_components.dir
-/home/lattapol/ros2_ws/src/ov2slam-ros2/Thirdparty/Sophus/build/CMakeFiles/install.dir
-/home/lattapol/ros2_ws/src/ov2slam-ros2/Thirdparty/Sophus/build/CMakeFiles/install/local.dir
-/home/lattapol/ros2_ws/src/ov2slam-ros2/Thirdparty/Sophus/build/CMakeFiles/install/strip.dir
